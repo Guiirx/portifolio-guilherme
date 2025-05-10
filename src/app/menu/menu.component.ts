@@ -4,7 +4,7 @@ import { MenuService } from '../services/menu.service';
 @Component({
   standalone: true,
   selector: 'app-menu',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })

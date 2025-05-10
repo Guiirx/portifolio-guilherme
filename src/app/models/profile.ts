@@ -1,4 +1,4 @@
-export class profile {
+export class Profile {
  name?: string;
  whatsApp?: string;
  linkedIn?: string;

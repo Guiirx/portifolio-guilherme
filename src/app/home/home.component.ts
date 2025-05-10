@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ProfileService } from '../services/profile.service';
+import { MenuComponent } from '../menu/menu.component';
+import { Menu } from '../models/menu';
 
 @Component({
   selector: 'app-home',
@@ -9,5 +11,14 @@ import { ProfileService } from '../services/profile.service';
 })
 export class HomeComponent {
 
-constructor(private profileService: ProfileService) { }
+  constructor(private profileService: ProfileService) { }
+
+  menuItems?: Array<Menu>;
+
+  ngOnInit() {
+    const menu = this.menuService.getItems();
+
+    this.menuItems = menu;
+  }
+
 }
