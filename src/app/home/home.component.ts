@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { ProfileService } from '../services/profile.service';
-import { MenuComponent } from '../menu/menu.component';
 import { Menu } from '../models/menu';
 
 @Component({
+  standalone: true,
   selector: 'app-home',
   imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  menuService: any;
 
   constructor(private profileService: ProfileService) { }
 
@@ -21,4 +22,4 @@ export class HomeComponent {
     this.menuItems = menu;
   }
 
-}
+  }
