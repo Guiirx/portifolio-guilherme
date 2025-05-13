@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
+
 export class MenuComponent {
 
   constructor(private menuService: MenuService) { }
