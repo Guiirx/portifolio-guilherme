@@ -3,7 +3,7 @@
 .banner {
     display: flex;
     justify-content: center;
-    background-color: linear-gradient(180deg, var(--color-blue-2) 15%, var(--color-blue-3) 100%);
+    background: linear-gradient(180deg, var(--color-blue-2) 15%, var(--color-blue-3) 100%);
     color: #fff;
     padding-top: 70px;
     text-align: center;
@@ -51,11 +51,63 @@
     padding: 15px;
     min-width: 170px;
     border-radius: 35px;
-    margin: 0 1dvb;
+    margin: 0 5px 15px;
     font-size: var(--font-size-4);
     font-weight: 700;
     background: var(--color-blue-1);
     color: #fff;
     text-wrap: nowrap;
 
+}
+
+/* box about */
+
+.about .box {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .box .img {
+    flex: 1;
+    margin: 0 auto 20px;
+}
+
+.about .box .img img {
+    width: 240px;
+    border-radius: 50%;
+}
+
+.about .box .flex {
+    flex: 2;
+}
+
+.about .box .text {
+
+    color: var(--color-blue-2);
+    margin-top: 15px;
+
+}
+
+.about .box .text p {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.about .box .text a {
+    color: (--color-pink-1);
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .about .box {
+        flex-direction: row;
+    }
+
+    .about .box .img img {
+        width: 100%
+    }
+
+    .about .box .text {
+        padding-left: 40px;
+    }
 }
