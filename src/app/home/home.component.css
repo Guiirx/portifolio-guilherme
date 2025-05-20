@@ -44,7 +44,7 @@
     justify-content: space-evenly;
 }
 
-.banner .box .buttons {
+.banner .box .buttons a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,14 +77,14 @@
     border-radius: 50%;
 }
 
-.about .box .flex {
-    flex: 2;
+.about .box .text {
+    flex: 2
 }
 
-.about .box .text {
+.about .box .text h3 {
 
     color: var(--color-blue-2);
-    margin-top: 15px;
+    margin-top: 18px;
 
 }
 
@@ -94,7 +94,7 @@
 }
 
 .about .box .text a {
-    color: (--color-pink-1);
+    color: var(--color-pink-1);
     font-weight: 400;
 }
 
@@ -145,6 +145,22 @@
 .skills .box .items .skill h4 {
     margin-top: 15px;
 }
+
+/* box projects */
+
+.projects .box h3 {
+    margin: 5px 0 20px;
+    font-size: var(--font-size-4);
+}
+
+
+.projects .box .projects {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+
 
 @media (min-width: 768px) {
     .about .box {
